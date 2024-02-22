@@ -2,12 +2,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #ffffff;
+    color: #7D5A69;
 }
 
 :root {
-    --main-color: #16b93a;
+    --main-color: #E3A3BF;
 }
 
 header, section, footer {
@@ -18,6 +18,12 @@ header, section, footer {
 
 header {
     text-align: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border: 2px solid var(--main-color);
+    font-size: larger;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 h1 {
@@ -37,12 +43,37 @@ section {
     margin-bottom: 20px;
 }
 
+.experience-container div,
+.education-container div,
+.courses-container div,
+.skills-container div, 
+.languages-container div {
+    transition: background-color 2s ease;
+}
+
+.experience-container div:hover,
+.education-container div:hover,
+.courses-container div:hover,
+.skills-container div:hover,
+.languages-container div:hover {
+    background-color: #FCB6D4;
+}
+
 footer {
     text-align: center;
     padding: 20px;
     background-color: var(--main-color);
     color: #fff;
 }
+
+p a {
+    transition: transform 0.2s ease;
+}
+
+p a:hover {
+    transform: scale(1.5);
+}
+
 
 #idiomas {
     background-color: #f4f4f4;
